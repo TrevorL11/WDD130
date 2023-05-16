@@ -1,0 +1,23 @@
+nav, footer {
+    background-color: steelblue;
+    color: white;
+    padding: 2%;
+
+}
+body {
+    text-align: center;
+}
+img {
+    width: 80%;
+}
+a:hover {
+    background-color: white;
+    color: steelblue;
+}
+a:visited {
+    color: black;
+}
+footer p {
+    font-size: 1em;
+    margin: .5em auto;
+}

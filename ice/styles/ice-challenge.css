@@ -1,0 +1,39 @@
+body {
+    max-width: 22%;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    background-color: rgb(243, 137, 155);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  }
+  h1 {
+    color: white;
+  }
+h1:hover{
+    color: black;
+}
+li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color:black;
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 5%;
+    max-width: 150%;
+}
+img {
+    max-width: 50%;
+}
+.quote {
+    font-size: 2em;
+    max-width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+}
+#end {
+  color: black;
+    max-width: 78%;
+    margin: auto;
+
+}
