@@ -75,6 +75,9 @@ main section{
 .msg h2{
     color: rgb(17, 73, 73);
 }
+#background {
+    height: 725px;
+}
 footer{
     background-color: rgb(0, 0, 0);
     color: white;
