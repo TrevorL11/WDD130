@@ -146,7 +146,7 @@ border-radius: 5px;
 .button-box{
     text-align: center;
 }
-main.home-grid{
+.home-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
