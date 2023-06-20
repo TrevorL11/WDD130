@@ -213,6 +213,14 @@ footer p{
 footer p a:hover{
     text-decoration: underline;
 }
+.locgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.loci, .loct{
+    width: 100%;
+    padding-top: 5em;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
