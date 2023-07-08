@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styles/form.css" />
-</head>
-<body>
-    <form action="/my-handling-form-page" method="post">
-        <ul>
-          <li>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" />
-          </li>
-          <li>
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="user_email" />
-          </li>
-          <li>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message"></textarea>
-          </li>
-          <li class="button">
-            <button type="submit">Send your message</button>
-          </li>
-        </ul>
-      </form>
-        <script>
-            // get the feedback div element so we can do something with it.
-            const feedbackElement = document.getElementById('feedback');
-            // get the form so we can read what was entered in it.
-            const formElement = document.forms[0];
-            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-            formElement.addEventListener('submit', function(e) {
-                // stop the form from doing the default action.
-                e.preventDefault();
-                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-                // make the feedback element visible.
-                feedbackElement.style.display = "block";
-                // add a class to move everything down so our message doesn't cover it.
-                document.body.classList.toggle('moveDown');
-            });
-        </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baboclap Real Estate</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+  </head>
+  <body>
+    <div id="content">
+    <header>
+        <img class="logo" src="images/logo.png" alt="Baboclap Logo" />      <nav>
+          <a href="index.html">Home</a>
+          <a href="seeourwork.html">See Our Work</a>
+          <a href="site-plan.html">Site Plan</a>
+          <a href="join.html">Join Us</a>
+      </nav>
+    </header>
+    <div id="hero">
+        <div id="hero-box">
+          <img id="hero-img" src="images/airbnb2.jpg" alt="Whitewater rafting">
+        </div>
+        <section id="hero-msg">
+          <h1 class="home-title">Build a Real Estate Empire</h1>
+          <h4>Baboclap Real Estate</h4>
+          <div class='button-box'>
+              <a class='join' href="join.html">Join Now</a>
+          </div>
+        </section>
+    </div>
+    <main class="home-grid">
+      <section class="join-card">
+        <img class="card-img" src="images/door.jpg" alt="door">
+        <h2>Join Us</h2>
+    </section>
+    <section class="seeourwork-card">
+        <img class="card-img" src="images/airbnb photos/bnbtable.jpeg" alt="table with flowers on top">
+        <h2>See Our Work</h2>
+    </section>
+    </main>
+    <footer>
+      <p>Baboclap &copy; 2023 - Trevor Larson</p>
+      <p><a href="site-plan.html">Site Plan</a></p>
+      <p><a href="join.html">Join Us</a></p>
+      <div class="social">
+          <a href="https://facebook.com" target="_blank">
+              <img src="images/facebook.png" alt="fb icon">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+              <img src="images/twitter.png" alt="twitter icon">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+              <img src="images/instagram.png" alt="instagram icon">
+          </a>
+      </div>
+  </footer>
+</div>
+  </body>
 </html>
