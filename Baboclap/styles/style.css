@@ -25,7 +25,7 @@
   
 body{
     background-color: #36382E;
-    font-family: "Roboto Condensed", "Noto Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -33,7 +33,9 @@ body{
 .home-title{
     font-size: 2em;
 }
-
+h1, h2, h3, h4{
+    font-family: "Roboto Condensed";
+}
 header{
     background-color: #A43312;
     color: antiquewhite;
@@ -97,11 +99,11 @@ h4{
 }
 #hero-msg h1{
     text-align: center;
-    color: #5BC3EB;
+    color: #36382E;
 }
 #hero-msg h4{
     text-align: center;
-    color: #5BC3EB;
+    color: #36382E;
 }
 #hero-img{
     width: 100%;
@@ -164,7 +166,8 @@ main section img{
 }
 .desc{
     text-align: center;
-    width: 100%
+    width: 100%;
+    color: white;
 }
 .msg p{
     color: rgb(6, 47, 47);
